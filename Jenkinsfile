@@ -7,7 +7,7 @@ pipeline {
     environment{
         ARTIFACTORY_SERVER = 'artifactory-prod'
         ARTIFACTORY_REPO = 'scale-release-local'
-        SBT_OPTS = ""
+        SBT_OPTS = "-Dsbt.log.noformat=true"
     }
     options{
         ansiColor('xterm')
